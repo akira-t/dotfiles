@@ -23,6 +23,10 @@ endif
 inoremap <C-j> <ESC>
 nnoremap <C-j> <ESC>
 vnoremap <C-j> <ESC>
+nnoremap <C-h> <C-w>h 
+nnoremap <C-j> <C-w>j 
+nnoremap <C-k> <C-w>k 
+nnoremap <C-l> <C-w>l 
 
 filetype plugin indent on
 filetype indent on
