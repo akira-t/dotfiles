@@ -40,6 +40,18 @@ alias ql='qlmanage -p "$@" >& /dev/null'
 alias quicklook='ql'
 alias lee='tee'
 
+# history
+#重複履歴を無視
+export HISTCONTROL=ignoredups 
+#空白から始めたコマンドを無視
+export HISTCONTROL=ignorespace
+#履歴無視コマンド
+export HISTIGNORE="fg*:bg*:history*:pwd*"
+
+export HISTSIZE=10000
+HISTTIMEFORMAT='%Y%m%d %T $ ';
+export HISTTIMEFORMAT
+
 function copy(){ command echo $@ | tr -d "\n" | pbcopy; }
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
