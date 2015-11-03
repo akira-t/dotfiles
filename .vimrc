@@ -28,6 +28,7 @@ set laststatus=2 " Always display the statusline in all windows
 set showtabline=2 " Always display the tabline, even if there is only one tab
 set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 "remap
+let mapleader = "\<Space>"
 inoremap <C-j> <ESC>
 nnoremap <C-j> <ESC>
 vnoremap <C-j> <ESC>
@@ -35,6 +36,9 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j 
 nnoremap <C-k> <C-w>k 
 nnoremap <C-l> <C-w>l 
+nnoremap <Leader>w :w<CR>
+vmap <Leader>y "+y
+nmap <Leader>p "+p
 
 filetype plugin indent on
 filetype indent on
